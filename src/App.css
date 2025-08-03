@@ -203,6 +203,20 @@ body {
   transition: background-color 0.2s ease;
   align-items: center;
   position: relative;
+  opacity: 0;
+  transform: translateX(-80px); /* Position de départ plus éloignée */
+  animation: slideInWithOffset 0.8s ease-out forwards;
+}
+
+@keyframes slideInWithOffset {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px)
+  }
 }
 
 .campaigns .body_campaigns .table-row:not(:last-child)::after {
