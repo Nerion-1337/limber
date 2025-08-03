@@ -36,7 +36,7 @@ const pages = [
 export const Route_Client = pages.map((page, index) => ({
   index,
   label: page.name,
-  url: page.name === "home" ? "/" : `/${page.name}`,
+  url: page.name === "home" ? "/limber/" : `/limber/${page.name}`,
   type: "intern",
   page: page.component,
   icon: page.icon,
