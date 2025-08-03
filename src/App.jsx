@@ -2,9 +2,9 @@
 import Sidebar from "./components/sidebar";
 // DATA
 import { Route_Client } from "#data/links";
+import 'bootstrap/dist/css/bootstrap.min.css';
 // REACT
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState } from "react";
 import "./App.css";
 //
 //
@@ -24,7 +24,7 @@ function App() {
   ///
   const content = (
     <>
-      <section className="body">
+      <section className="body d-flex">
         <BrowserRouter>
           <Sidebar />
           <Routes>{routeContent}</Routes>
